@@ -133,6 +133,7 @@ main{
 
 #article  img{
 max-width: 100%;
+width: 100%;
 
 }
 #media{
@@ -218,4 +219,37 @@ padding: 1em 0 1em 0 ;
     padding: 0.4em;
     font-weight: 600;
     margin: 0 0.4em 0 0.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+    #suscribeButton,
+    #routes,
+    #headerPromotion,
+    #topContent{
+        display: none;
+    }
+    header{
+        padding: 1em;
+    }
+    #article{
+        padding: 1em;
+    }
+
+    
+
 }
