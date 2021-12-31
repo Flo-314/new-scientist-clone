@@ -236,13 +236,20 @@ footer div{
 }
 footer div *{
 
-    padding: 0.3em 0 0.3em 0;
-    margin: 0.3em 0 0.3em 0;
+    padding: 0.2em 0 0.2em 0;
+}
+footer button{
+    background-color:   #005587
+    ;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.1em 0.7em 0.1em 0.7em
 }
 
 footer div ul li{
     border-right: #4d4d4d 1px solid;
-    padding: 0.2em 0.5em 0.2em 0.5em;
+    padding:  0.5em  0.5em;
 }
 
 
@@ -260,8 +267,11 @@ footer div ul li{
     #topContent{
         display: none;
     }
-    header,article,footer{
+    main,header,article,footer,footer div, footer div div{
         padding: 1em;
+    }
+    footer{
+        width: 80%;
     }
     
 
