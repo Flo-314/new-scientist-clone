@@ -40,6 +40,10 @@ hr {
 .flex {
   display: flex;
 }
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
 .flexAlign {
   justify-content: space-between;
   align-items: center;
@@ -120,21 +124,32 @@ main{
     display: grid;
     max-width: 1100px;
     grid-template-areas: "article article  trending";
-    padding: 1em;
+    padding: 1em 0 1em 0
 }
 
 
-#topContent{
-    grid-area: trending;
-    max-width: 300px;
-    padding: 1em;
-    padding-top: 0;
-}
+
+
 
 #article  img{
 max-width: 100%;
 
 }
+#media{
+padding: 1em 1em 0.5em 0;
+}
+#media img{
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 1em;
+}
+#author{
+padding: 0 0 1em 0;
+}
+#author div{
+    margin-bottom: 0.4em;
+}
+
 #headerTitle h1 {
   font-size: 3.13rem;
   font-weight: 700;
@@ -157,4 +172,50 @@ max-width: 100%;
 
 .journalRef{
 margin: 1em 0 1em 0;
+}
+#topContent{
+    grid-area: trending;
+    max-width: 300px;
+    padding: 1em;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+#topContent nav ul{
+    gap: 0.33rem;
+    margin-bottom: 0.3rem;
+}
+#topContent nav li{
+    padding: 0.5em 0.73em 0.5em 0.73em;
+    background-color: rgba(221, 221, 221, 0.432);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+#trendingContent ul{
+    gap: 0.3rem;
+}
+#trendingContent ul li{
+    font-size: 1.4rem;
+    background-color: rgba(221, 221, 221, 0.432);
+    font-weight: 700;
+    padding: 0.5rem;
+
+}
+
+#trendingContent ul li a {
+    color: black;
+
+}
+
+#topics{
+font-size: 1rem;
+padding: 1em 0 1em 0 ;
+}
+
+#topics button{
+    background: #005587;
+    color: white;
+    padding: 0.4em;
+    font-weight: 600;
+    margin: 0 0.4em 0 0.4em;
 }
